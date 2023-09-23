@@ -31,7 +31,7 @@ function Main({ setCount, showCart,gallery,productsStore,select,setSelect,setSho
   }
 
   function addProductToCart(id: number): void {
-    let product:productsType | undefined = productsStore.find(product => product.id === id) // find index products store
+    const product:productsType | undefined = productsStore.find(product => product.id === id) // find index products store
     const productExist: productsType | undefined = products.find(product => product.id === id) // find index of product exist in products[]
 
     let newProducts: productsType[] = []
